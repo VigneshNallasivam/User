@@ -1,8 +1,7 @@
 package regex;
 import java.util.Scanner;
-
 import java.util.regex.Pattern;
-public class Email 
+public class Password1 
 {
 	static boolean isValid(String regex, String userInput)
 	{
@@ -11,9 +10,9 @@ public class Email
 	public static void main(String[] args)
 	{
 	Scanner sc=new Scanner(System.in);
-	String emailIdPattern ="^[a-z]{2,20}[@][a-z]{2,5}[.][a-z]{2,3}$";
-	System.out.println("ENTER EMAIL ID");
-	String emailId=sc.next();
-	System.out.println(isValid(emailIdPattern, emailId));
+	String pass1Pattern ="^[A-Za-z0-9]{8}$";
+	System.out.println("ENTER PASSWORD OF TYPE-1");
+	String pass1=sc.next();
+	System.out.println(isValid(pass1Pattern, pass1));
 	}
 }
